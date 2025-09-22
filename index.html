@@ -16,16 +16,16 @@
     <!-- Navbar -->
     <nav class="flex items-center justify-between p-3 bg-white">
       <!-- justify-between evenly divides the space -->
-      <a href="a" id="brand" class="flex items-center gap-2 flex-1"
+      <a href="#" id="brand" class="flex items-center gap-2 flex-1"
         ><i class="fa-solid fa-house max-w-12 max-h-12"></i>
         <span class="text-lg font-bold font-display">ToDesktop</span>
       </a>
       <div id="nav-menu" class="hidden lg:flex lg:gap-12">
         <!-- Hidden by default but starts to showup from medium width devices -->
-        <a href="#" class="font-medium hover:text-primary">Pricing</a>
-        <a href="#" class="font-medium hover:text-primary">Docs</a>
-        <a href="#" class="font-medium hover:text-primary">ChangeLog</a>
-        <a href="#" class="font-medium hover:text-primary">Blogs</a>
+        <a href="#pricing" class="font-medium hover:text-primary">Pricing</a>
+        <a href="#docs" class="font-medium hover:text-primary">Docs</a>
+        <a href="#changelog" class="font-medium hover:text-primary">ChangeLog</a>
+        <a href="#blogs" class="font-medium hover:text-primary">Blogs</a>
         <a href="#" class="font-medium hover:text-primary">Login</a>
       </div>
       <div class="hidden lg:flex flex-1 justify-end">
@@ -36,6 +36,7 @@
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
+      <!-- For small devices -->
       <button class="p-2 lg:hidden" onclick="handleMenu()">
         <!-- Remember the upper one -->
         <!-- md:hidden, hidden from medium-width devices, only visible on small:mobiles,etc -->
@@ -48,7 +49,7 @@
         <!-- creating elements after clicking on 3 buttons on phone -->
         <!-- inset-0 takes full width of container -->
         <div id="nav-bar" class="flex justify-between">
-          <a href="a" id="brand" class="flex items-center gap-2"
+          <a href="#" id="brand" class="flex items-center gap-2"
             ><i class="fa-solid fa-house max-w-12 max-h-12"></i>
             <span class="text-lg font-bold font-display">ToDesktop</span>
           </a>
@@ -58,27 +59,27 @@
         </div>
         <div class="mt-6">
           <a
-            href="#"
+            href="#pricing" onclick="handleMenu()"
             class="font-medium m-3 p-3 bg-gray-50 hover:bg-blue-400 rounded-lg block"
             >Pricing</a
           >
           <a
-            href="#"
+            href="#docs" onclick="handleMenu()"
             class="font-medium m-3 p-3 bg-gray-50 hover:bg-blue-400 block rounded-lg"
             >Docs</a
           >
           <a
-            href="#"
+            href="#changelog" onclick="handleMenu()"
             class="font-medium m-3 p-3 bg-gray-50 hover:bg-blue-400 block rounded-lg"
             >ChangeLog</a
           >
           <a
-            href="#"
+            href="#blogs" onclick="handleMenu()"
             class="font-medium m-3 p-3 bg-gray-50 hover:bg-blue-400 block rounded-lg"
             >Blogs</a
           >
           <a
-            href="#"
+            href="#" onclick="handleMenu()"
             class="font-medium m-3 p-3 bg-gray-50 hover:bg-blue-400 block rounded-lg"
             >Login</a
           >
@@ -87,7 +88,7 @@
           <button
             class="flex gap-2 items-center px-6 py-2 bg-gray-50 rounded-lg hover:bg-gray-600 hover:text-white"
           >
-            <span class="">Electron Developers</span>
+            <span class="" onclick="handleMenu()">Electron Developers</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -1356,11 +1357,87 @@
               </p>
             </dd>
           </div>
+          <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+            <dt class="flex justify-between items-center" aria-controls="faq-3">
+              <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+              <i class="fa-solid fa-chevron-up -rotate-180"></i>
+            </dt>
+            <dd id="faq-3" class="hidden text-lg font-light mt-6">
+              <p>
+                That depends! If you would like to distribute your web app to
+                your users as a downloadable desktop app then ToDesktop is for
+                you. If you want to make a desktop app of a website for your
+                personal use, ToDesktop is overkill.
+              </p>
+            </dd>
+          </div>
+          <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+            <dt class="flex justify-between items-center" aria-controls="faq-4">
+              <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+              <i class="fa-solid fa-chevron-up -rotate-180"></i>
+            </dt>
+            <dd id="faq-4" class="hidden text-lg font-light mt-6">
+              <p>
+                That depends! If you would like to distribute your web app to
+                your users as a downloadable desktop app then ToDesktop is for
+                you. If you want to make a desktop app of a website for your
+                personal use, ToDesktop is overkill.
+              </p>
+            </dd>
+          </div>
+          <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+            <dt class="flex justify-between items-center" aria-controls="faq-5">
+              <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+              <i class="fa-solid fa-chevron-up -rotate-180"></i>
+            </dt>
+            <dd id="faq-5" class="hidden text-lg font-light mt-6">
+              <p>
+                That depends! If you would like to distribute your web app to
+                your users as a downloadable desktop app then ToDesktop is for
+                you. If you want to make a desktop app of a website for your
+                personal use, ToDesktop is overkill.
+              </p>
+            </dd>
+          </div>
+          <div class="group rounded-xl border border-gray-200 bg-gray-50 p-6">
+            <dt class="flex justify-between items-center" aria-controls="faq-6">
+              <p class="font-semibold text-lg">Is ToDesktop For Me?</p>
+              <i class="fa-solid fa-chevron-up -rotate-180"></i>
+            </dt>
+            <dd id="faq-6" class="hidden text-lg font-light mt-6">
+              <p>
+                That depends! If you would like to distribute your web app to
+                your users as a downloadable desktop app then ToDesktop is for
+                you. If you want to make a desktop app of a website for your
+                personal use, ToDesktop is overkill.
+              </p>
+            </dd>
+          </div>
         </div>
+
       </div>
-      <div class="h-[1000px]"></div>
-      <!-- min-h-screen takes the height of width only -->
     </main>
+    <footer class="mt-5 mx-auto px-6 py-12">
+      <div class="rounded-lg border bg-gray-50 flex flex-col lg:flex-row-reverse items-center px-8 py-12 gap-8">
+        <!-- flex-row-reverse: Places the first item on the right instead of the left. -->
+        <a href="#" class="text-lg font-light font-display">Documentation</a>
+        <div class="flex gap-8 text-xl">
+          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="#" id="brand" class="flex items-center gap-2 flex-1"><i class="fa-solid fa-house max-w-12 max-h-12"></i>
+        <span class="text-lg font-bold font-display">ToDesktop</span>
+      </a>
+
+      </div>
+      <div id="sub-foot" class="flex items-center justify-center mt-3 gap-3 flex-col">
+        <div class="flex gap-2 items-center">
+          <img class="w-4 h-4" src="./assets/rma.webp" alt="">
+          <span class="text-sm text-gray-500">Sumit Adhikari</span>
+        </div>
+        <p class="text-gray-500 text-sm">&copy; 2024 All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
